@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>User Dashboard</h1>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h3>Filters</h3>
+      <button>All Users</button>
+      <button>Active Users</button>
+      <button>Sort by Spend</button>
+    </aside>
+
+    <main class="main">
+      <section class="user-list">
+        <div class="user-card">
+          <p><strong>Name:</strong> John Doe</p>
+          <p><strong>Email:</strong> john@example.com</p>
+          <p><strong>Status:</strong> Active</p>
+          <button class="expand-btn">Expand</button>
+        </div>
+        <!-- Add more user cards dynamically -->
+      </section>
+
+      <section class="summary">
+        <h3>Summary Panel</h3>
+        <p>Total Users: <span id="total-users">--</span></p>
+        <p>Total Spend: ₹<span id="total-spend">--</span></p>
+        <p>Average Spend: ₹<span id="avg-spend">--</span></p>
+      </section>
+
+      <section class="generator">
+        <h4>Next User ID: <span id="next-id">#101</span></h4>
+      </section>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
